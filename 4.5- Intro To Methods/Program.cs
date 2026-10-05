@@ -22,6 +22,8 @@ namespace _4._5__Intro_To_Methods
             Console.WriteLine("Press ENTER for another joke");
             Console.ReadLine();
             Joke(50);
+         //   Notice that when we call this method we need to ‘pass’
+          //  it an integer.
 
         }
 
@@ -71,13 +73,6 @@ namespace _4._5__Intro_To_Methods
          //invoke.
 
         }
-
-
-
-
-
-
-
 
 
     }
