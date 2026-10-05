@@ -14,6 +14,21 @@ namespace _4._5__Intro_To_Methods
     {
         static void Main(string[] args)
         {
+
+            //Intro
+
+            Console.Title = "Intro to Methods";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Welcome to the Intro to Methods!");
+            Console.WriteLine();
+            Console.WriteLine("Please press ENTER to continue");
+            Console.ReadLine();
+            Console.Clear();
+
+
+
+            //TUTORIAL*****************
+
             Console.WriteLine("Press ENTER for a joke:");
             Console.ReadLine();//Waits for user to press enter to continue
             Joke(); //Calls the Joke method to run the code inside it
@@ -22,18 +37,16 @@ namespace _4._5__Intro_To_Methods
             Console.WriteLine("Press ENTER for another joke");
             Console.ReadLine();
             Joke(50);
-         //   Notice that when we call this method we need to ‘pass’
-          //  it an integer.
+            //   Notice that when we call this method we need to ‘pass’
+            //  it an integer.
 
-        }
+            //******************
 
-        public static void MethodName()
-        {
-            //Method code goes here
         }
 
         public static void Joke()
         {
+
             Console.WriteLine("99 little bugs in the code");
             Thread.Sleep(500);
             Console.WriteLine("99 little bugs.");
@@ -50,10 +63,9 @@ namespace _4._5__Intro_To_Methods
 
             //  Main() method:
 
-           // Console.WriteLine("Press ENTER for a joke:");
-          //  Console.ReadLine();
-          //  Joke(); 
-
+            // Console.WriteLine("Press ENTER for a joke:");
+            //  Console.ReadLine();
+            //  Joke(); 
         }
 
         public static void Joke(int numBugs)
@@ -66,14 +78,58 @@ namespace _4._5__Intro_To_Methods
             Thread.Sleep(500);
             Console.WriteLine((numBugs++) + " little bugs in the code.");
 
-         //  In order to use this method, we must call it. Notice the
-         //  difference though; in order to use this
-         //method you must provide it with an argument so it knows which
-         //version of Jokes() to
-         //invoke.
+            //  In order to use this method, we must call it. Notice the
+            //  difference though; in order to use this
+            //method you must provide it with an argument so it knows which
+            //version of Jokes() to
+            //invoke.
 
         }
 
+        //ASCII Art
+
+        public static void DrawBear()
+        {
+            Console.Write(" __         __      ");
+            Console.WriteLine("((_,...,_))");
+
+            Console.Write("/  \\.-\"\"\"-./  \\      ");
+            Console.WriteLine("  |o o|");
+
+            Console.Write("\\    -   -    /      ");
+            Console.WriteLine("  \\   /");
+
+            Console.Write(" |   o   o   |       ");
+            Console.WriteLine("   ^_^");
+
+            Console.Write("\\  .-'''-.  /");
+            Console.WriteLine();
+
+            Console.Write(" '-\\__Y__/-'");
+            Console.WriteLine();
+
+            Console.Write("    `---`");
+            Console.WriteLine();
+        }
+
+        public static void DrawCat()
+        {
+            Console.WriteLine("  /\\_/\\  ");
+            Console.WriteLine(" ( o.o ) ");
+            Console.WriteLine("  > ^ <  ");
+        }
+
+        public static void DrawDog()
+        {
+            Console.WriteLine("  / \\__");
+            Console.WriteLine(" (    @\\___");
+            Console.WriteLine(" /         O");
+            Console.WriteLine("/   (_____/");
+            Console.WriteLine("/_____/   U");
+        }
+
+
 
     }
+
 }
